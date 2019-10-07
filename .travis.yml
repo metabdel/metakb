@@ -10,6 +10,6 @@ install:
 # command to run tests
 script:
   - pytest
-  - flake8 
+  - git diff-tree --no-commit-id --name-only -r $REVISION | xargs pre-commit run --files
 after_success:
   - coveralls
