@@ -6,5 +6,5 @@ class Harvester(ABC):
     """Abstract base class for all harvester classes."""
 
     @abstractmethod
-    def harvest(self):
-        """Collect all associations from the resource."""
+    def harvest_iter(self):
+        """Collect all associations from the resource and yield as dict."""
