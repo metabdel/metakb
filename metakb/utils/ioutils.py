@@ -1,4 +1,4 @@
-"""Useful io utilities"""
+"""Useful io utilities."""
 
 import json
 import gzip
