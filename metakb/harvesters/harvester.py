@@ -1,8 +1,10 @@
 """Base module for all harvesters."""
-from abc import ABCMeta
+from abc import ABC, abstractmethod
 
 
-class Harvester(metaclass=ABCMeta):
+class Harvester(ABC):
     """Abstract base class for all harvester classes."""
 
-    pass
+    @abstractmethod
+    def harvest(self):
+        """Collect all associations from the resource."""
