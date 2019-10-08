@@ -1,1 +1,1 @@
-"""A package for loading from VICC resources."""
+"""Treat this directory as a package for loading from VICC resources."""
